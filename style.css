@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: #3da4e3;
+    background-color: rgb(61, 164, 227);
+    font-family: 'Maven Pro', sans-serif;
 }
 
 .wrapper {
@@ -23,6 +24,46 @@ body {
 
 .header-container p {
     text-align: center;
-    font-size: 60px;
+    padding: 70px;
+    font-weight: 800;
+    font-size: 5rem;
     color: white;
+}
+
+.quote-container {
+    background: linear-gradient(
+        to right bottom, 
+        rgba(42, 151, 218, 0.7), 
+        rgba(60, 100, 223, 0.3));
+    margin: auto;
+    width: 800px;
+    height: 60%;
+    border-radius: 50px;
+    color: white;
+}
+
+.quote-container .quote {
+    height: 70%;
+}
+
+.quote p {
+    padding: 50px;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.quote-container .author {
+    height: 30%;
+}
+
+.author p {
+    text-align: end;
+    padding: 50px;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.author p::before {
+    content: "-";
+
 }
