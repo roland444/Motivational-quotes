@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3da4e3;
+}
+
+.wrapper {
+    margin: 0 auto 0 auto;
+    width: 900px;
+    height: 100vh;
+}
+
+.header-container {
+    margin: auto;
+    width: 800px;
+    height: 30%;
+    
+}
+
+.header-container p {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
