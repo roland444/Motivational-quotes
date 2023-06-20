@@ -7,12 +7,14 @@
 body {
     background-color: rgb(61, 164, 227);
     font-family: 'Maven Pro', sans-serif;
+    --quote-load-time: 1000ms;
 }
 
 .wrapper {
     margin: 0 auto 0 auto;
     width: 900px;
     height: 100vh;
+    overflow: hidden;
 }
 
 .header-container {
@@ -28,6 +30,7 @@ body {
     font-weight: 800;
     font-size: 5rem;
     color: white;
+    animation: quote-load var(--quote-load-time) ease-in;
 }
 
 .quote-container {
@@ -50,6 +53,7 @@ body {
     padding: 50px;
     font-size: 2.2rem;
     font-weight: 500;
+    animation: quote-load var(--quote-load-time) ease-in;
 }
 
 .quote-container .author {
@@ -61,9 +65,21 @@ body {
     padding: 50px;
     font-weight: 400;
     font-size: 2rem;
+    animation: quote-load var(--quote-load-time) ease-in;
 }
 
 .author p::before {
     content: "-";
+    font-size: 2.5rem;
 
+}
+
+@keyframes quote-load {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
