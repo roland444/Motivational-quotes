@@ -4,10 +4,22 @@
     box-sizing: border-box;
 }
 
+@keyframes quote-load {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 body {
     background-color: rgb(61, 164, 227);
     font-family: 'Maven Pro', sans-serif;
-    --quote-load-time: 1000ms;
+    --title-load-time: 700ms;
+    --quote-load-time: 3000ms;
+    --author-load-time: 5000ms;
 }
 
 .wrapper {
@@ -30,7 +42,7 @@ body {
     font-weight: 800;
     font-size: 5rem;
     color: white;
-    animation: quote-load var(--quote-load-time) ease-in;
+    animation: quote-load var(--title-load-time) ease-in;
 }
 
 .quote-container {
@@ -49,7 +61,7 @@ body {
     height: 70%;
 }
 
-.quote p {
+.quote-content p {
     padding: 50px;
     font-size: 2.2rem;
     font-weight: 500;
@@ -60,26 +72,44 @@ body {
     height: 30%;
 }
 
-.author p {
+.author-content p {
     text-align: end;
     padding: 50px;
     font-weight: 400;
     font-size: 2rem;
-    animation: quote-load var(--quote-load-time) ease-in;
+    animation: quote-load var(--author-load-time) ease-in;
 }
 
-.author p::before {
+.author-content p::before {
     content: "-";
     font-size: 2.5rem;
 
 }
 
-@keyframes quote-load {
-    0% {
-        opacity: 0;
-    }
 
-    100% {
-        opacity: 1;
-    }
+
+
+.cloud {
+    position: absolute;
 }
+
+.left-top {
+    top: 150px;
+    left: 150px;
+}
+
+.left-bottom {
+    bottom: 75px;
+    left: 250px;
+}
+
+.right-top {
+    top: 300px;
+    right: 200px;
+}
+
+.right-bottom {
+    bottom: 50px;
+    right: 150px;
+}
+
