@@ -1,14 +1,16 @@
 const _quote = document.querySelector("#quote");
 const _author = document.querySelector("#author");
-const api_url = "";
 
+window.onload = () => {
+    getData();
+}
 
-document.addEventListener("DOMContentLoaded", function() {
-    loadData()
-})
-
-async function loadData() {
-    const response = await fetch(api_url);
+async function getData() {
+    const response = await fetch("./quotes.json");
     const data = await response.json();
-    console.log(data[0]);
+    console.log(data[0].quote);
+}
+
+function loadQuote(data) {
+
 }

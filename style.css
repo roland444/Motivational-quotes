@@ -33,7 +33,6 @@ body {
     margin: auto;
     width: 800px;
     height: 30%;
-    
 }
 
 .header-container p {
@@ -83,33 +82,4 @@ body {
 .author-content p::before {
     content: "-";
     font-size: 2.5rem;
-
 }
-
-
-
-
-.cloud {
-    position: absolute;
-}
-
-.left-top {
-    top: 150px;
-    left: 150px;
-}
-
-.left-bottom {
-    bottom: 75px;
-    left: 250px;
-}
-
-.right-top {
-    top: 300px;
-    right: 200px;
-}
-
-.right-bottom {
-    bottom: 50px;
-    right: 150px;
-}
-
